@@ -1,0 +1,245 @@
+<!DOCTYPE html> 
+<html> 
+
+<!--NEW DESIGN TICKETS PAGE-->
+
+
+
+<head>
+    <title>TICKETS-Romeo and Juliet</title>
+
+<meta charset="UTF-8"> 
+<meta class="description" content="Pricing and deals on show tickets-Hip Hop Romeo and Juliet"> 
+<meta class="keywords" content="tickets, pricing, show, cost, student, teachers, class, group pricing"> 
+<meta class="author" content="Jessica Molesini"> 
+<meta class="viewport" content="width=device width, scale=initial scale-1"> 
+
+<!--STYLESHEET-->
+/*NAVIGATION STYLING*---------------------------------*/
+
+<style>
+
+nav{ 
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 50px;
+    font-size: 30pt;
+}
+
+
+    nav a:hover{
+        color: #399cc3;
+    }
+    
+    nav a:active{
+        color: #ff99cc;
+    }
+    
+    
+    .currentLink{
+        color: #cc6699;
+        background-color: black;
+    }
+    nav ul li {
+        list-style-type: none;
+        width: 150 px;
+        float: left;   
+    }
+    
+     nav ul li a {
+        text-decoration:none;
+        color: white;}
+
+p{
+    color: white;
+    text-align: justify;
+    margin-left: 100px;
+    font-size: 24pt;
+
+}
+
+h3{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 100px;
+}
+ 
+
+
+
+/*BODY OF WEBSITE STYLING*/
+
+body {
+    background-color: black;
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/*DROPDOWN STYLE*/
+
+.dropbtn {
+  background-color: #3499cc;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #106377;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.dropdown-content a:hover {background-color: #d1659f}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #106377;
+
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color:black;
+  color: #3499cc;
+  opacity: 0.7;
+
+}
+
+
+/*media query*/
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+
+  .button {
+  background-color: #106377;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+</style>
+
+</head>
+
+<body>
+<!--NAVIGATION-->
+
+<nav> 
+    <ul> 
+        <li> <a href="index.html"> <img src="logo.png"></li></a>
+        <li><a href="show_info_page.html">Show Info</a></li>
+        <li><a href="tickets_page.html"> Tickets</a></li>
+        <li><a href="music_page.html">Music</a></li>
+        <li><a href="contact_page.html">Contact</a></li>
+        <li><a href="#" class="fa fa-facebook"></a></li>
+        <li><a href="#" class="fa fa-youtube"></a></li>
+        <li><a href="#" class="fa fa-instagram"></a></li>
+    </ul>
+</nav> 
+
+<!--LAYOUT OF PAGE TEXT AND PICTURES-->
+
+
+<!--image header tickets-->
+<div style="margin-left:500px; margin-right:500px" img-container> <!-- block parent element-->
+    <img src="tickets_header.png" alt="tickets">
+ </div>
+
+
+ <p> The show will run in Dublin throughout the month of January 2021 on Thursdays and Fridays, starting at 10 am until 12 pm.
+    Bookings available now until 31/12/2020.</p>
+
+
+<!--TICKETS MENU DROPDOWNS-->
+
+<!--DROPDOWNS-->
+
+
+<!--Select Ticket-->
+<div class="dropdown">
+    <button class="dropbtn"> Select Ticket</button>
+    <div class="dropdown-content">
+        <a href="#">Student - 15 euro</a>
+        <a href="#"> Standard - 20 euro</a>
+        <a href="#"> Teacher - 18 euro</a>
+        <a href="#"> Group (max 10 people) - 100 euro</a>
+        <a href="#"> School (class ticket) - 200 euro (</a>
+    </div>
+</div>
+
+<!--Select Date-->
+<div class="dropdown">
+    <button class="dropbtn"> Select Date</button>
+    <div class="dropdown-content">
+    <a href="#">07/01/2021 - Thursday</a>
+    <a href="#">08/01/2021 - Friday</a>
+    <a href="#">14/01/2021 - Thursday0</a>
+    <a href="#"> 15/01/2021 -Friday</a>
+    <a href="#">21/01/2021 -Thursday</a>
+    <a href="#">22/01/2021 -Friday</a>
+</div>
+
+<!--Ticket amount-->
+<div class="dropdown">
+    <button class="dropbtn">Tickets amount</button>
+    <div class="dropdown-content">
+    <a href="#"> 1</a>
+    <a href="#"> 2</a>
+    <a href="#"> 3</a>
+    <a href="#"> 4</a>
+    <a href="#"> 5</a>
+</div>
+
+
+<button type="button">Confirm</button>
+
+
+<footer>
+    <p>&copyRomeo & Juliet - Less Drama. More Beats. -  Backstage</p>
+  </footer>
+
+</body>
+
+</html>
+
+
+
+

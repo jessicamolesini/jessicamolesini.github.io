@@ -1,0 +1,178 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+<title> Contact </title> 
+
+<!--NEW DESIGN CONTACT PAGE -->
+
+<meta charset="UTF-8">
+<meta class="description" content="contact page, email, phone number">
+<meta class="keywords" content="contact, email, phone number"> 
+<meta class="author" content="Jessica Molesini">
+<meta class="viewport" content="width=device width, initial scale=1">
+
+<!--STYLESHEET-->
+<style>
+
+
+
+    body {
+        background-color: black;
+        border-left: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding:30px;
+        text-align: justify;
+        color: white;
+        align-items: center;
+    
+    }
+    
+    nav{ 
+        background-color: black;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 24pt;
+        height: 50px;
+    }
+    
+    nav ul li {
+        list-style-type: none;
+        width: 150 px;
+        float: left;
+    
+        
+    }
+    
+     nav ul li a {
+        text-decoration:none;
+        color: white;
+        line-height: 50px;
+    }
+    
+    nav a:hover{
+        color: #399cc3;
+    }
+    
+    nav a:active{
+        color: #ff99cc;
+    }
+    
+    .currentLink{
+        color: #cc6699;
+        background-color: black;
+    }
+    
+    .img-container {
+        float: left;
+        display: block;
+        }
+    
+    
+    .input[type=text], select, text area{
+        margin left: 800 px;
+        margin right: 300px;
+        border: 1px;
+        box-sizing: border-box;
+        width: 100%;
+        
+    
+    }
+    
+    input[type=submit]{
+        background color:
+    }
+
+    footer ul li{
+        font-size: 18pt;
+        background-color: #106377; 
+        color: white; 
+        list-style-type: none;
+    }
+
+
+    form{
+        width: 100%;
+    }
+
+    /*media query*/
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+
+    
+    
+    </style>
+    
+
+
+<!--NAVIGATION-->
+
+
+<nav> 
+    <ul> 
+        <li> <a href="index.html"> <img src="logo.png"></li></a>
+        <li><a href="show_info_page.html">Show Info</a></li>
+        <li><a href="tickets_page.html"> Tickets</a></li>
+        <li><a href="music_page.html">Music</a></li>
+        <li><a href="contact_page.html">Contact</a></li>
+        <li><a href="#" class="fa fa-facebook"></a></li>
+        <li><a href="#" class="fa fa-youtube"></a></li>
+        <li><a href="#" class="fa fa-instagram"></a></li>
+    </ul>
+</nav>
+
+
+<!--LAYOUTS -->
+
+
+<!--CONTACT IMAGE TO ALIGN LEFT -->
+<div class="img-container"> <!-- block parent element-->
+    <img src="contact_header.png" alt="Contact">
+ </div>
+
+
+ <!--CONTACT FORM TO ALIGN RIGHT!-->
+
+<div class="container">
+    <div id="left">
+
+
+<div class="container">
+    <div id="right">
+
+    <form>
+    <label for="fname"> Name: </label><br>
+    <input type="text"id="fname" name="fname"><br> 
+
+    <label for="lname"> Surname:</label><br> 
+    <input type="text"id="lname" name="lname"><br> 
+
+    <label for="email"> e-mail:</label><br>
+    <input type="text" id="email" name="email"><br> 
+
+    <label for="subject"> Subject:</label><br> 
+    <input type="text" id="subject" name="subject"><br> 
+
+    <label for="Message"> Message: </label><br> 
+    <input type="message" id="message" name="message"><br>
+
+</form> 
+</div>
+
+
+<button type="button">Send Message</button>
+
+<!--FOOTER-->
+
+<footer>
+    <p>&copyRomeo & Juliet - Less Drama. More Beats. -  Backstage</p>
+  </footer>
+
+</body>
+
+</html> 
